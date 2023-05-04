@@ -14,11 +14,12 @@ cout<<"==========================\n";
     scanf("%d", &n);
 
 //bagian atas belah ketupat
+n=n-1;
     for (i =1; i <= n ; i++) {
         for (j = i; j <= n; j++) {
             printf("*");
         }
-        for (k = 1; k < 2 * i-2 ; k++) {
+        for (k = 1; k <= (2 * i-2) ; k++) {
             printf(" ");
         }
         for (j=i;j<=n;j++)
@@ -30,11 +31,11 @@ cout<<"==========================\n";
     }
 
 //bagian bawah belah ketupat
-for (i = n - 1; i >= 1; i--) {
+for (i = n - 1; i >= 0; i--) {
         for (j = n; j > i; j--) {
             printf("*");
         }
-        for (k = 1; k < 2 * i; k++) {
+        for (k = 1; k <= 2 * i; k++) {
             printf(" ");
         }   
            for (j = i; j <= n-1; j++) {
