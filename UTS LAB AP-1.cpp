@@ -10,11 +10,11 @@ cout<<"==========================\n";
 cout<<"PROGRAM POLA BELAH KETUPAT\n";
 cout<<"==========================\n";
 
-    printf("Masukkan angka: ");
-    scanf("%d", &n);
+    cout<< "Masukkan angka = ";
+    cin>>n;
 
 //bagian atas belah ketupat
-n=n-1;
+    n=n-1;
     for (i =1; i <= n ; i++) {
         for (j = i; j <= n; j++) {
             printf("*");
@@ -25,8 +25,7 @@ n=n-1;
         for (j=i;j<=n;j++)
        {
            printf("*");
-       }
-            
+       }           
         printf("\n");
     }
 
@@ -39,8 +38,7 @@ for (i = n - 1; i >= 0; i--) {
             printf(" ");
         }   
            for (j = i; j <= n-1; j++) {
-            printf("*");
-              
+            printf("*");             
         }
         printf("\n");{
        }
